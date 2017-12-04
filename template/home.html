@@ -1,0 +1,29 @@
+{{ define "home" }}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home</h1>
+{{template "menu"}}
+<hr>
+<form method="POST" action="doAction">
+    <table border="1">
+        <tr>
+            <th>Email</th>
+            <td><input type="text" name="email" required="required"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="password" name="password" required="required"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Login">
+</form>
+
+</body>
+</html>
+{{end}}
